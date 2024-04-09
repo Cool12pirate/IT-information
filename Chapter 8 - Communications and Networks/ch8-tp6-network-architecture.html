@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet8.css">
+</head>
+
+<body>
+    <div class="top-navbar">
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+        <a class="search" href="#">🔎</a>
+        <input type="text" id="search" name="search" placeholder="Serach..">
+
+    </div>
+
+    <ul>
+        <!--System Software-->
+        <h3 style="text-align: center;"><a class="left-main-h"
+                href="file:///C:/Users/user/Documents/Chapter%204/chp4-tp1-system-software.html">System software</a>
+        </h3>
+
+        <!--The system unit-->
+        <h3 style="text-align: center;"><a
+                href="file:///C:/Users/user/Documents/Chapter%205%20-%20System%20Unit/chp5-tp1-systemunit-index.html"
+                class="left-main-h">System Unit</a>
+        </h3>
+
+        <!--input and output-->
+        <h3><a style="text-align: center;" href="file:///C:/Users/user/Documents/Chapter%206/chp6-index.html"
+                class="left-main-h">Input and Output </a></h3>
+
+        <!--Secondary Storage-->
+        <h3><a style="text-align: center;" class="left-main-h"
+                href="file:///C:/Users/user/Documents/Chapter%207%20-%20Secondary%20Storage/ch7-index.html"> Secondary
+                Storage </a></h3>
+
+        <!--Com and Networks-->
+        <h3><a style="text-align: center;" class="left-main-h"
+                href="file:///C:/Users/user/Documents/Chapter%208%20-%20Communications%20and%20Networks/ch8-index.html">
+                Communications and Networks ▾</a></h3>
+        <li>
+            <a href="ch8-tp1-communication.html">Communication</a>
+        </li>
+        <li>
+            <a href="ch8-tp2-communication-channels.html">Communication Channel</a>
+        </li>
+        <li>
+            <a href="ch8-tp3-connection-device.html">Connection Device</a>
+        </li>
+        <li>
+            <a href="ch8-tp4-data-transmission.html">Data Transmission</a>
+        </li>
+        <li>
+            <a href="ch8-tp5-network.html">Network</a>
+        </li>
+        <li>
+            <a class="active" href="ch8-tp6-network-architecture.html">Network Architecture</a>
+        </li>
+        <li>
+            <a href="ch8-tp7-organisational-networks.html">Organisational Network</a>
+        </li>
+
+         <!--Database-->
+         <h3><a style="text-align: center;" class="left-main-h"
+            href="file:///C:/Users/user/Documents/Chapter%209%20-%20Database%20Concepts/ch9-index.html">
+            Database Concept </a></h3>
+
+
+    </ul>
+
+    <div class="main">
+        <h2>Network Architecture</h2>
+        <p>
+            <b>Network architecture</b> describe how a network is arranged and how resources are coordinated and shared.
+            It encompasses a variety of different network specifics, including network topologies and strategies.
+            Network topology describes the physical arrangement of the network. Network strategies define how
+            information and resources are shared.
+        </p>
+
+        <h3>Topologies</h3>
+        <p>
+            A network can be arranged or configured in several different ways. This arrangement is called the network's
+            <b>topology</b>. The most common topologies are:
+        </p>
+        <p>
+            ● <b>Bus network</b> : Each device is connected to a common cable called a bus or backbone, and all
+            communications travel along this bus.
+        </p>
+        <p>
+            ● <b>Ring network</b> : Each device is connected to two other devices, forming a ring, see Figure 8-14. When
+            a message is sent, it is passed around the ring until it reaches the intended destination.
+        </p>
+        <p>
+            ● <b>Star network</b> : Device is connected directly to a central network switch, see Figure 8-15. Whenever
+            a
+            node sends a message, it is routed to the switch, which then passes the message along to the intended
+            recipient. The star network is the most widely used network topology today. It is applied to a broad range
+            of applications from small networks is the home to very large networks in major corporations.
+        </p>
+        <p>
+            ● <b>Tree network</b> : Each device is connected to a central node, either directly or through one or more
+            other devices. The central node is connected to two or more subcordinate nodes that in turn are connected to
+            other subordinate node, and so forth, forming a treelike structure, see Figure 8-16. This network, also
+            known as a hierarchical network, is often used to share corporatewide data.
+        </p>
+        <p>
+            ● <b>Mesh network</b> : This topology is the newest type and does not use a specific physical layout (such
+            as a star or a tree). Rather, the mesh network requires that each node have more than one connection to the
+            other nodes, see Figure 8-17. The resulting pattern forms the appearance of a mesh. If a path between two
+            nodes is somehow disrupted, data can be automatically rerouted using another path. Wireless technologies are
+            frequently used to build mesh networks.
+        </p>
+
+        <img src="ring topology.jpg" alt="ring topology" width="15%">
+        <p><b>Figure 8-14</b> Ring Network</p>
+
+        <img src="star topology.webp" alt="star topology" width="25%">
+        <p><b>8-15</b> Star Network</p>
+
+        <img src="Binary-Tree-Network-Topology.png" alt="tree topology" width="15%">
+
+        <h3>Strategies</h3>
+        <p>
+            Every network has a <b>strategy</b>, or a way of coordinating the sharing of information and resources. Two
+            of the most common network strategies are client/server and peer-to-peer. <b>Client/server networks</b> use
+            central servers to coordinate and supply services to other nodes on the network. The server provides access
+            to resources such as web pages, databases, application software, and hardware, see Figure 8-18. This
+            strategy is based on specialisation. Server nodes coordinate and supply specialised services, and client
+            nodes request the services. Commonly used server operating systems are Windows Server, Mac OS X Server,
+            Linux, and Solaris. Client/server networks are widely used on the Internet. For example, each time you open
+            a web browser, your computer (the client) sends out a request for a specific web page. This request is
+            routed over the Internet to a server. This server locates and sends the requested material back to your
+            computer. One advantage of the client/server network strategy is the ability to handle very large networks
+            efficiently. Another advantage is the availability of powerful network management software to monitor and
+            control network activities. The major disadvantages are the cost of installation and maintenance. In a
+            <b>peer-to-peer (P2P)</b> network, nodes have equal authority and can act as both clients and servers. The
+            most common way to share games, movies, and music over the Internet is to use P2P network. For example,
+            special file-sharing such as BitTorrent can be used to obtain files located on another personal computer and
+            also can provide files to other personal computers. P2P networks are rapidly growing in popularity as people
+            continue to share information with others around the world. The primary advantage is that they are easy and
+            inexpensive (often free) to set up and use. One disadvantage of P2P networks is the lack of security
+            controls or other common management functions. For this reason, few businesses use this type of network to
+            communicate sensitive information.
+        </p>
+    </div>
+
+</body>
+
+</html>

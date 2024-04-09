@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet9.css">
+</head>
+
+<body>
+    <div class="top-navbar">
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+        <a class="search" href="#">🔎</a>
+        <input type="text" id="search" name="search" placeholder="Serach..">
+
+    </div>
+
+    <ul>
+        <!--System Software-->
+        <h3 style="text-align: center;"><a class="left-main-h"
+                href="file:///C:/Users/user/Documents/Chapter%204/chp4-tp1-system-software.html">System software</a>
+        </h3>
+
+        <!--The system unit-->
+        <h3 style="text-align: center;"><a
+                href="file:///C:/Users/user/Documents/Chapter%205%20-%20System%20Unit/chp5-tp1-systemunit-index.html"
+                class="left-main-h">System Unit</a>
+        </h3>
+
+        <!--input and output-->
+        <h3><a style="text-align: center;" href="file:///C:/Users/user/Documents/Chapter%206/chp6-index.html"
+                class="left-main-h">Input and Output </a></h3>
+
+        <!--Secondary Storage-->
+        <h3><a style="text-align: center;" class="left-main-h"
+                href="file:///C:/Users/user/Documents/Chapter%207%20-%20Secondary%20Storage/ch7-index.html"> Secondary
+                Storage </a></h3>
+
+        <!--Com and Networks-->
+        <h3><a style="text-align: center;" class="left-main-h"
+                href="file:///C:/Users/user/Documents/Chapter%208%20-%20Communications%20and%20Networks/ch8-index.html">
+                Communications and Networks</a></h3>
+
+        <!--Database-->
+        <h3><a style="text-align: center;" class="left-main-h"
+                href="file:///C:/Users/user/Documents/Chapter%209%20-%20Database%20Concepts/ch9-index.html">
+                Database Concept ▾</a></h3>
+
+        <li>
+            <a href="ch9-tp1-data.html">Data</a>
+        </li>
+        <li>
+            <a href="ch9-tp2-data-organisation.html">Data Organisation</a>
+        </li>
+        <li>
+            <a href="ch9-tp3-databases.html">Databases</a>
+        </li>
+        <li>
+            <a class="active" href="ch9-tp4-DBMS-structure.html">DBMS structure</a>
+        </li>
+        <li>
+            <a href="ch9-tp5-types-of-databases.html">Types of Databases</a>
+        </li>
+        <li>
+            <a href="ch9-tp6-database-uses-and-issues.html">Database Uses and Issues</a>
+        </li>
+
+    </ul>
+
+    <div class="main">
+        <h2>DBMS structure</h2>
+        <p>
+            DBMS programs are designed to work with data that is logically structured or arranged in a particular way.
+            This arrangement is known as the <b>database model.</b> These models define rules and standards for all the
+            data in a database. For example, Microsoft Access is designed to work with databases using the relational
+            data model. Five common database models are <em>hierarchical, network, relational, multidimensional,</em>
+            and <em>object-oriented.</em>
+        </p>
+
+        <h3>Hierarchical Database</h3>
+        <p>
+            At one time, nearly every DBMS designed for mainframes used the hierarchical data model. In a
+            <b>hierarchical database,</b> fields or records and structured in nodes. <b>Nodes</b> are points connected
+            like the branches of an upside-down tree. Each entry has one <b>parent node,</b> although a parent may have
+            several <b>child nodes</b>. This sometimes described as a <b>one-to-many relationship.</b> To find a
+            particular field, you have to start at the top with a parent and trace down the tree to a child. The nodes
+            farther down the system are subordinate to the ones above, like the hierarchy of managers in a corporation.
+            An example of a hierarchical database is a system to organise music files, see Figure 9-6. The parent node
+            is the music library for a particular user. This parent has four children, labeled "artist." Coldplay, one
+            of the children, has three children, labeled "song."
+        </p>
+        <p>
+            The problems with a hierarchical database is that if one parent node is deleted, so are all the subordinate
+            child nodes. Moreover, a child node cannot be added unless a parent node is added first. The most
+            significant limitation is the rigid structure: one parent only per child, and no relationships or
+            connections between child nodes themselves.
+        </p>
+
+        <h3>Network Database</h3>
+        <p>
+            Responding to the limitations of the hierarchical data model, network were developed. A <b>network
+                database</b> also had a hierarchical arrangement of nodes. However, each child node may have more than
+            one parent node. This is sometimes described as a <b>many-to-many relationship</b>. There are additional
+            connections-called <b>pointers</b>- between parent nodes and child nodes. Thus, a node may be reached
+            through more than one path. It may be traced down through different branches. For example, a university
+            could use this type of organisation, you can see that each student can have more than one teacher. Each
+            teacher also can teach more than one course. Students may take more than a single course. This demonstrates
+            how the network arrangement is more flexible and in many cases more efficient than the hierarchical
+            arrangement.
+        </p>
+
+        <h3>Relational Database</h3>
+        <p>
+            A more flexible type of organisation is the <b>realtional database</b>. In this structure, there are no
+            access paths down a hierarchy. Rather, the data elements are stored in different tables, each of which
+            consits of rows and columns. A table and its data are called a <b>relation.</b> An example of a relational
+            database is shown in Figure 9-8. This Vehicle Owner Table contains license numbers, names, and addresses for
+            all registered drivers. Within the table, a row is a record containing information about one driver. Each
+            column is a field. The fields are License Number, Last Name, First Name, Street, City, State, and Zip. All
+            related tables must have a <b>common data item</b> enabling information stored in one table to be linked
+            with information stored in another. In this case, the three tables are related by the License Number field.
+        </p>
+
+        <p>
+            Police officers who stop a speeding car look up the driver's information in the Department of Motor Vehicles
+            database, Figure 9-9 using the driver's license number. They also can check for any unpaid traffic
+            violations in the Outstanding Citations Table. Finally, if the officers suspect that the car is stolen, they
+            can look up what vehicles the driver owns in the Vehicle Table. The most valuable feature of relational
+            databases is thier simplicity. Entries can be easily added, deleted, and modified. The hierarchical and
+            network databases are more rigid. The relational organisation is common for personal computer DBMSs such as
+            Access. Relational databases are also widely used for mainframe and midrange systems.
+        </p>
+
+        <h3>Multidimensional Database</h3>
+        <p>
+            The multidimensional data model is a variation and an extension of the relational data model. Whereas
+            relational databases use tables conisting of rows and colums, <b>multidimensional databases</b> extend this
+            two-diemensional data model to include additional or multiple dimensions, sometimes called a <b>data
+                cube.</b> Data can be viewed as a cube having three or more sides and consisting of cells. Each side of
+            the cube is considered a dimension of the data. In this way, complex relationships between data can be
+            represented and efficiently analysed. Multidimensional databases provide several advantages over relational
+            databases. Two of the most significant advanatges are:
+        </p>
+
+        <p>
+            ● <b>Conceptualisation:</b> Multidimensional databases and data cubes provide users with an intuitive model
+            in which complex data and relationships can be conceptualised.
+        </p>
+        <p>
+            ● <b>Processing Speed:</b> Analysing and querying a large multidimensional database can be much faster. For
+            example, a query requiring just a few seconds on a multidimensional database could take minutes or hours to
+            perform on a relational database.
+        </p>
+
+        <h3>Object-Oriented Database</h3>
+        <p>
+            The other data structure are primarily designed to handle structured data such as names, addresses, pay
+            rates, and so on. <b>Object-oriented database</b> are more flexible and store data as well as instructions
+            to manipulate the data. Additionally, this structure is ideally designed to provide input for
+            object-oriented software development. Object-oriented data using classes, objects, attributes, and methods.
+        </p>
+        <p>
+            ● <b>Classes</b> are general definitions.
+        </p>
+        <p>
+            ● <b>Objects</b> are specific instances of a class that can contain both data and instructions to manipulate
+            the data.
+        </p>
+        <p>
+            ● <b>Attributes</b> are the data fields an object possesses.
+        </p>
+        <p>
+            ● <b>Methods</b> are instructions for retrieving or manipulating attribute values.
+        </p>
+
+        <p>
+            For example, a health club might use an object-oriented employment database, see Figure 9-10. The database
+            uses a class, Employee, to define employee objects that are stored in the database. This definition includes
+            the attributes First Name, Last Name, Address, and Wage and the method Pay. Atul, Neha, and Aparna are
+            objects each with specific attributes value. For example, the object Atul has the stored value Atul, 191,
+            Pitampura, 110034. Although hierarchical and network databases are still widely used, the relational,
+            multidimensional, and object-oriented data models are more popular today. For summary of DBMS organisation,
+            refer Table 9-1.
+        </p>
+
+        <table>
+            <caption><b>Table 9-1</b> Summary of DBMS organisation</caption>
+            <tr>
+                <th>Organisation</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Hierarchical</td>
+                <td>Data structured in nodes organised like an upside-down tree; each parent node can have several
+                    children; each child node can have only one parent
+                </td>
+            </tr>
+            <tr>
+                <td>Network</td>
+                <td>Like hierarchicalexpect that each child can have several parents</td>
+            </tr>
+            <tr>
+                <td>Relational</td>
+                <td>Data stored in tables consisting of rows and columns</td>
+            </tr>
+            <tr>
+                <td>Multidimensional</td>
+                <td>Data stored in data cubes with three or more dimensions</td>
+            </tr>
+            <tr>
+                <td>Object-Oriented</td>
+                <td>Organises data using classes, objects, attributes, and methods.</td>
+            </tr>
+        </table>
+
+        <p class="con-b">
+            <span class="con-h">Concept Check</span> <br>
+            <b>1.</b> What is a database model? <br>
+            <b>2.</b> List the five database models and discuss each. <br>
+            <b>3.</b> What is the difference between a realtional database and a multidimensional database.
+        </p>
+
+        <p class="thi-b">
+            <span class="thi-h">Think About It</span> <br>
+            Search the Internet CODDS 12 Rules and discuss the need of these rules.
+        </p>
+
+
+    </div>
+</body>
+
+</html>

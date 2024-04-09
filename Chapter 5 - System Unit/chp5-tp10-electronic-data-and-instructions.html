@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet5.css">
+</head>
+
+<body>
+    <div class="top-navbar">
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+        <a class="search" href="#">🔎</a>
+        <input type="text" id="search" name="search" placeholder="Serach..">
+
+    </div>
+
+    <ul>
+        <!--System Software-->
+        <h3 style="text-align: center;"><a class="left-main-h"
+                href="file:///C:/Users/user/Documents/Chapter%204/chp4-tp1-system-software.html">System software</a>
+        </h3>
+
+        <!--The system unit-->
+        <h3 style="text-align: center;"><a href="chp5-tp1-systemunit-index.html" class="left-main-h">System Unit ▾</a>
+        </h3>
+        <li><a href="chp5-tp2-systemunit(brief).html">System Unit (Detailed)</a></li>
+        <li><a href="chp5-tp3-system-board.html">System Board</a></li>
+        <li><a href="chp5-tp4-microprocessor.html">Microprocessor</a></li>
+        <li><a href="chp5-tp5-memory.html">Memory</a></li>
+        <li><a href="chp5-tp6-expansion-slots-and-cards.html">Expansion slots and cards</a></li>
+        <li><a href="chp5-tp7-bus-line.html">Bus line</a></li>
+        <li><a href="chp5-tp8-ports.html">Ports</a></li>
+        <li><a href="chp5-tp9-power-supply.html">Power Supply</a></li>
+        <li><a class="active" href="chp5-tp10-electronic-data-and-instructions.html">Electronic Data and
+                Instructions</a></li>
+        <div class="drop">
+            <li>
+                <a href="#num-representation">Numeric Representation</a>
+            </li>
+
+            <li>
+                <a href="#character-encoding">Character Encoding</a>
+            </li>
+        </div>
+
+        <!--input and output-->
+        <h3><a style="text-align: center;" href="file:///C:/Users/user/Documents/Chapter%206/chp6-index.html"
+                class="left-main-h">Input and Output </a></h3>
+
+
+        <!--Secondary Storage-->
+        <h3><a style="text-align: center;" class="left-main-h"
+                href="file:///C:/Users/user/Documents/Chapter%207%20-%20Secondary%20Storage/ch7-index.html"> Secondary
+                Storage </a></h3>
+
+                <!--Com and Networks-->
+        <h3><a style="text-align: center;" class="left-main-h"
+            href="file:///C:/Users/user/Documents/Chapter%208%20-%20Communications%20and%20Networks/ch8-index.html">
+            Communications and Networks </a></h3>
+
+             <!--Database-->
+        <h3><a style="text-align: center;" class="left-main-h"
+            href="file:///C:/Users/user/Documents/Chapter%209%20-%20Database%20Concepts/ch9-index.html">
+            Database Concept </a></h3>
+
+    </ul>
+
+    <div class="main">
+        <h2>Electronic Data and Instructions</h2>
+        <p id="num-representation">
+            Have you ever wondered why it is said that we live in a digital world? It's becuase computers cannot
+            recognise information the same way you and I can. People follow instructions and process data using letters,
+            numbers, and special characters. For example, if we wanted someone to add the numbers 3 and 5 together and
+            record the answer, we might say 'please add 3 and 5.' The system unit, however, is electronic circuitry and
+            cannot directly process such a request. Our voices create <b>analog,</b> or continuous, signals that vary to
+            represent different tones, pitches, and volume. Computers, however, can recognise only <b>digital</b>
+            electronic signals. Before any processing can occur within the system unit, a conversion must occur from
+            what we understand to what the system unit can electronically process.
+        </p>
+
+        <h3>Numeric Representation</h3>
+        <p>
+            What is the most fundamental statement you can make about electricity? It can be either on or off. Indeed,
+            there are many forms of techonology that can make use of this two-state on/off, yes/no, present/absent
+            arrangement. For instance, a light switch may be on or off, or an electric circuit open or closed. A
+            specific location on a tape or disk may have a postitive charge or a negative charge. This is the reason,
+            then that a two-state or binary system is used to represent data and instructions.
+        </p>
+
+        <table>
+            <caption><b>Table 5-5</b> Numeric representation</caption>
+            <tr>
+                <th>Decimal</th>
+                <th>Binary</th>
+                <th>Hex</th>
+            </tr>
+            <tr>
+                <td>00</td>
+                <td>00000000</td>
+                <td>00</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>00000001</td>
+                <td>01</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>00000010</td>
+                <td>02</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>00000011</td>
+                <td>03</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>00000100</td>
+                <td>04</td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>00000101</td>
+                <td>05</td>
+            </tr>
+            <tr>
+                <td>06</td>
+                <td>00000110</td>
+                <td>06</td>
+            </tr>
+            <tr>
+                <td>07</td>
+                <td>00000111</td>
+                <td>07</td>
+            </tr>
+            <tr>
+                <td>08</td>
+                <td>00001000</td>
+                <td>08</td>
+            </tr>
+            <tr>
+                <td>09</td>
+                <td>00001001</td>
+                <td>09</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>00001010</td>
+                <td>0A</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>00001011</td>
+                <td>0B</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>00001100</td>
+                <td>0C</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>00001101</td>
+                <td>0D</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>00001110</td>
+                <td>0E</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>00001111</td>
+                <td>0F</td>
+            </tr>
+        </table>
+
+        <p id="character-encoding">
+            The decimal system that we are all familiar with has 10 digits (0,1,2,3,4,5,6,7,8,9). The <b>binary
+                system,</b> however consits of only two digits-0 and 1. Each 0 or 1 is called a <b>bit</b>-short for
+            binary digit. In the system unit, the 1 can be represented by a negative charge and then by 0 by no electric
+            charge. In order to represent numbers, letters, groups of eight called <b>bytes</b>. Whenever you enter must
+            be converted into a binary number before it can be processed. Any number can be expressed as a binary
+            number. Binary numbers, however, are difficult for humans to work with becuase they require often
+            represented in a format more readable by humans. The <b>hexadecimal system</b>, or <b>hex</b>, uses 16
+            digits (0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F) to represent binary numbers. Each hex digit represent four binary
+            digits and two hex digits are commonly used together to represent 1 byte (8 binary digits), see Table 5-5.
+            You may have already seen hex when selecting a colour in a website design or drawing application, or when
+            entering the password for access to a wireless network.
+        </p>
+
+        <h3>Character Encoding</h3>
+        <p>
+            As we've seen, computers must represent all numbers with the binary system internally. What about text? How
+            can a computer provide representation of non-numeric characters we use to communicate, such as the sentence
+            you are reading now? The answer is character encoding schemes or standards. <b>Character encoding
+                standards</b> assign a unique sequence of bits to each character. Historically, personal computers used
+            the <b>ASCII (American Standard Code for Information Interchange)</b> to represent characters, while
+            mainframe computers used <b>EBCDIC (Extended Binary Coded Decimal Interchange Code).</b> These schemes were
+            quite effective; however, they are limited. ASCII, for example, only uses 7 bits to represent each
+            character, which means that only 128 total character could be represented. This was fine for most characters
+            in the English language but not large enough to support other languages such as Chinese and Japanese. These
+            languages have too many characters to be represented by the 7-bit ASCII code.
+        </p>
+
+        <table>
+            <caption><b>Table 5-6</b> Binary codes</caption>
+            <tr>
+                <th>Code</th>
+                <th>Uses</th>
+            </tr>
+            <tr>
+                <td>ASCII</td>
+                <td>Microcomputers</td>
+            </tr>
+            <tr>
+                <td>EBCDIC</td>
+                <td>Large computers</td>
+            </tr>
+            <tr>
+                <td>Unicode</td>
+                <td>International languages</td>
+            </tr>
+        </table>
+
+        <p>
+            The explosion of the Internet and subsequent globalisation of computing have led to a new character encoding
+            called <b>Unicode</b>, which uses 16 bits. The Unicode standard is the most widely used character encoding
+            standard and is recognised by virtually every computer system. The first 128 character are assigned the same
+            sequence of bits as ASCII to maintain compatibility with older ASCii-formatted information. However, Unicode
+            uses a variable number of bits to represent each character, which allows non-english characters and special
+            characters to be represented. These codes are also called as Binary codes.
+        </p>
+
+        <p class="con-b">
+            <span class="con-h">Concept Check</span> <br>
+            <b>1.</b> What is difference between an analog and a digital signal? <br>
+            <b>2.</b> What are decimal and binary systems? How are they different? <br>
+            <b>3.</b> Compare EBCDIC, ASCII, and Unicode.
+        </p>
+
+        <p class="thi-b">
+            <span class="thi-h">Think About It</span> <br>
+            How do you think computers recoginse the information we provide and convert them into digital format?
+        </p>
+    </div>
+
+</body>
+
+</html>
